@@ -1,0 +1,18 @@
+<head>
+  <title>multiple-select</title>
+</head>
+
+<body>
+  {{output}}
+  {{> select}}
+</body>
+
+<template name="select">
+  <button>Click me to trigger rerendering</button>
+  <p>{{output}}</p>
+  <select name="foo" multiple>
+    <option value="1">Tech</option>
+    <option value="2" selected>Politics</option>
+    <option value="3" selected>People</option>
+  </select>
+</template>
